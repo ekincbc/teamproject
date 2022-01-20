@@ -79,10 +79,7 @@ body {
   padding: 6rem 15% 3rem 15%;
   margin-top: 5rem;
   border-radius: 10rem;
-  @media screen and (max-width: 800px) {
-    .process {
-      flex-direction: column;
-    }
+  
   }
 
   & .process__item {
