@@ -4,6 +4,8 @@
 
 html,
 body {
+  display: flex;
+  flex-direction: column;
   color: #444444;
   font-family: "Alegreya Sans", sans-serif;
   font-size: 16px;
@@ -17,26 +19,50 @@ body {
   justify-content: space-between;
   width: 100%;
   position: fixed;
-  top: 0;
-  left: 0;
+  background-color: white;
+  height: 3.5rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
   & .nav__logo {
-    height: 3rem;
-    margin-left: 4rem;
+    height: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 6.56rem;
+    background-color: white;
+    @media (max-width: 768px) {
+      align-self: flex-start;
+    }
   }
   & .nav__container {
     display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  & .nav__list {
-    background-color: #232323;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 1.25rem 5rem;
-    text-transform: uppercase;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    & .nav__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30%;
+      height: 3.5rem;
+      background-color: #232323;
+      color: #ffffff;
+      text-decoration: none;
+      list-style-type: none;
+      padding: 1.25rem 5rem;
+      text-transform: uppercase;
+      border-style: solid;
+      border-color: red;
+      &:hover {
+        background-color: #54be90;
+      }
+    }
   }
 }
 
