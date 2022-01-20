@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: #444444;
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  & .nav__logo {
+    height: 3rem;
+    margin-left: 4rem;
+  }
+  & .nav__container {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  & .nav__list {
+    background-color: #232323;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1.25rem 5rem;
+    text-transform: uppercase;
+  }
+}
+
+.header {
+  background-image: url(/img/frond-1869757_1280.png);
+  color: #ffffff;
+  height: 70vh;
+  background-size: cover;
+  text-align: center;
+  margin-top: 20vh;
+  padding-top: 20rem;
+
+  & .header__title {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 0;
+  }
+  & .header__desc {
+    font-size: 3rem;
+    font-weight: normal;
+    margin-top: 0;
+  }
+}
+
+.process {
+  text-align: center;
+  padding: 2rem;
+
+  & .process__quote {
+    font-size: 1.75rem;
+    padding: 0 10rem 0 10rem;
+  }
+
+  & .process__container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #232323;
+    color: #ffffff;
+    padding: 6rem 15% 3rem 15%;
+    margin-top: 5rem;
+    border-radius: 10rem;
+  }
+
+  & .process__item {
+    width: 20%;
+    font-size: 1.25rem;
+    position: relative;
+  }
+
+  & .process__tittle {
+    color: aqua;
+    font-weight: 800;
+    font-size: 1.75rem;
+    border-bottom: 3px solid white;
+  }
+
+  & .process__circle {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 17.5rem;
+    left: 3.5rem;
+  }
+}
