@@ -40,14 +40,22 @@ body {
   }
 }
 
+// Martin - I changed some things in header
 .header {
-  background-image: url(/img/frond-1869757_1280.png);
+  background-image: url("/img/frond-1869757_1280.png");
   color: #ffffff;
-  height: 70vh;
+  height: 85vh;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  margin-top: 20vh;
-  padding-top: 20rem;
+  margin-top: 10vh;
+  padding-top: 10vh;
+
+  & span {
+    color: aqua;
+    text-decoration: underline white;
+  }
 
   & .header__title {
     font-size: 4rem;
@@ -56,7 +64,7 @@ body {
   }
   & .header__desc {
     font-size: 3rem;
-    font-weight: normal;
+    font-weight: lighter;
     margin-top: 0;
   }
 }
