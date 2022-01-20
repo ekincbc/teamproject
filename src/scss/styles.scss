@@ -103,3 +103,29 @@ body {
     left: 3.5rem;
   }
 }
+
+.footer {
+  background-color: #ebebeb;
+  padding: 4rem 15%;
+  font-family: "Arapey", serif;
+  font-style: italic;
+
+  & .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #232323;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+  & .footer__line {
+    width: 25%;
+    height: 0.5rem;
+    background-color: #54be90;
+  }
+  & .footer__copy {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+}
