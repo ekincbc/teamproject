@@ -64,20 +64,25 @@ body {
 .process {
   text-align: center;
   padding: 2rem;
+}
 
-  & .process__quote {
-    font-size: 1.75rem;
-    padding: 0 10rem 0 10rem;
-  }
+& .process__quote {
+  font-size: 1.75rem;
+  padding: 0 10rem 0 10rem;
+}
 
-  & .process__container {
-    display: flex;
-    justify-content: space-between;
-    background-color: #232323;
-    color: #ffffff;
-    padding: 6rem 15% 3rem 15%;
-    margin-top: 5rem;
-    border-radius: 10rem;
+& .process__container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #232323;
+  color: #ffffff;
+  padding: 6rem 15% 3rem 15%;
+  margin-top: 5rem;
+  border-radius: 10rem;
+  @media screen and (max-width: 800px) {
+    .process {
+      flex-direction: column;
+    }
   }
 
   & .process__item {
